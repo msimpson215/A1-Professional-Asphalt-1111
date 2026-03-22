@@ -265,34 +265,9 @@ footer{background:#050505;padding:64px 40px 32px;border-top:3px solid var(--yell
     <span class="ticker-item"><img src="images/trader-joes.png" alt="Trader Joe's"/></span><span class="ticker-dot"></span>
     <span class="ticker-item"><img src="images/bandanasbbq.jpg" alt="Bandana's BBQ"/></span><span class="ticker-dot"></span>
     <span class="ticker-item"><img src="images/manards.jpg" alt="Menards"/></span><span class="ticker-dot"></span>
-    <span class="ticker-item"><img src="images/panarabread.png" alt="Panera Bread"/></span><span class="ticker-dot"></span>
+    <span class="ticker-item"><img src="images/panarabread.png" alt="Panera Bread"/></span>
   </div>
 </div>
-<script>
-(function(){
-  var track = document.getElementById('tickerTrack');
-  var imgs = track.querySelectorAll('img');
-  var loaded = 0;
-  function start(){
-    // duplicate items for seamless loop
-    var items = track.innerHTML;
-    track.innerHTML = items + items;
-    var pos = 0;
-    var half = track.scrollWidth / 2;
-    function step(){
-      pos += 0.5;
-      if(pos >= half) pos = 0;
-      track.style.transform = 'translateX(-' + pos + 'px)';
-      requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
-  }
-  imgs.forEach(function(img){
-    if(img.complete){ loaded++; if(loaded===imgs.length) start(); }
-    else { img.addEventListener('load', function(){ loaded++; if(loaded===imgs.length) start(); }); img.addEventListener('error', function(){ loaded++; if(loaded===imgs.length) start(); }); }
-  });
-})();
-</script>
 <!-- SERVICES -->
 <section class="section services-section" id="services">
   <div class="container">
@@ -536,6 +511,22 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeVox();}
 document.addEventListener('click',function(e){
   var o=document.getElementById('vox-overlay');
   if(o.style.display==='block'&&!o.contains(e.target)&&!e.target.closest('.vox-float-orb')&&!e.target.closest('#navAiBtn')&&!e.target.closest('#aiOrb')&&!e.target.closest('.btn-primary')){closeVox();}
+});
+</script>
+<script>
+window.addEventListener('load', function(){
+  var track = document.getElementById('tickerTrack');
+  if(!track) return;
+  track.innerHTML = track.innerHTML + track.innerHTML;
+  var pos = 0;
+  var half = track.scrollWidth / 2;
+  function step(){
+    pos += 0.6;
+    if(pos >= half) pos = 0;
+    track.style.transform = 'translateX(-' + pos + 'px)';
+    requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
 });
 </script>
 </body>
