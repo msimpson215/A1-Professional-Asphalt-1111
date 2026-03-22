@@ -84,7 +84,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;background:#000000;border-bo
 .service-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:rgba(245,197,24,0.15);line-height:1;margin-bottom:12px;}
 .service-icon{font-size:1.8rem;margin-bottom:14px;}
 .service-name{font-weight:800;font-size:1rem;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:8px;color:#fff;}
-.service-desc{font-size:0.85rem;color:var(--muted);line-height:1.6;}
+.service-desc{font-size:0.85rem;color:#ffffff;line-height:1.6;}
 .service-arrow{position:absolute;bottom:20px;right:20px;color:var(--yellow);font-size:1.1rem;opacity:0;transition:opacity 0.2s,transform 0.2s;}
 .service-card:hover .service-arrow{opacity:1;transform:translateX(4px);}
 /* Photo backgrounds on service cards */
@@ -118,10 +118,16 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;background:#000000;border-bo
 
 /* ── MAP SECTION ── */
 .map-section{background:var(--dark);padding:80px 40px;}
-.map-placeholder{margin-top:40px;background:var(--gray);border:1px solid rgba(255,255,255,0.08);border-radius:4px;height:360px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;}
+.map-section:hover .map-flag-overlay{background:rgba(0,0,0,0.58);transition:background 0.4s;}
+.map-flag-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.72);transition:background 0.4s;}
+.map-placeholder{margin-top:40px;background:rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.08);border-radius:4px;height:360px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;}
 .map-placeholder .map-icon{font-size:3rem;opacity:0.3;}
 .map-placeholder p{color:var(--muted);font-size:0.9rem;letter-spacing:0.06em;text-transform:uppercase;}
 .map-placeholder .map-badge{background:var(--yellow);color:var(--black);font-size:0.7rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:5px 12px;border-radius:2px;}
+/* Video/Joe section flag */
+.video-section{background:var(--black);padding:96px 40px;position:relative;overflow:hidden;}
+.video-section::before{content:'';position:absolute;inset:0;background:url('images/unitedstatesflag.jpg') center/cover no-repeat;filter:brightness(0.18);z-index:0;}
+.video-section .container{position:relative;z-index:1;}
 
 /* ── REVIEWS ── */
 .reviews-section{background:var(--black);padding:96px 40px;}
@@ -243,9 +249,7 @@ footer{background:#050505;padding:64px 40px 32px;border-top:3px solid var(--yell
     <div class="hero-tagline">THE LAST<br/>ASPHALT COMPANY<br/><span style="color:var(--yellow)">YOU'LL EVER CALL</span></div>
 
     <p class="hero-sub">Commercial sealcoating, striping, paving, and concrete — done right the first time.</p>
-    <div class="hero-btns">
-      <a href="https://a1asphaltpro.com/contact-us/" class="btn-primary">Get a Free Estimate</a>
-    </div>
+
   </div>
 </section>
 
@@ -336,7 +340,7 @@ footer{background:#050505;padding:64px 40px 32px;border-top:3px solid var(--yell
       </a>
     </div>
     <div class="national-btn-wrap">
-      <a href="#contact" class="national-btn">National General Contractors — Speak With a Project Specialist</a>
+      <a href="#contact" class="national-btn">Speak With a Project Specialist Today</a>
     </div>
   </div>
 </section>
