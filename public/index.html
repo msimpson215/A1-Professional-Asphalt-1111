@@ -58,11 +58,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;background:#000000;border-bo
 .stat-label{font-size:0.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-top:4px;}
 
 /* ── TICKER ── */
-.ticker-wrap{background:var(--yellow);padding:14px 0;overflow:hidden;position:relative;}
+.ticker-label{background:var(--black);text-align:center;padding:10px;font-size:0.7rem;font-weight:800;letter-spacing:0.2em;text-transform:uppercase;color:var(--yellow);}
+.ticker-wrap{background:var(--yellow);padding:16px 0;overflow:hidden;position:relative;}
 .ticker-track{display:flex;align-items:center;width:max-content;}
-.ticker-item{display:inline-flex;align-items:center;margin-right:64px;flex-shrink:0;}
-.ticker-item img{height:58px;width:auto;max-width:160px;object-fit:contain;opacity:0.9;}
-.ticker-dot{width:5px;height:5px;background:var(--black);border-radius:50%;opacity:0.3;margin-right:64px;flex-shrink:0;}
+.ticker-item{display:inline-flex;align-items:center;margin-right:80px;flex-shrink:0;}
+.ticker-item img{height:48px;width:auto;max-width:130px;object-fit:contain;opacity:0.85;}
+.ticker-dot{width:5px;height:5px;background:var(--black);border-radius:50%;opacity:0.3;margin-right:80px;flex-shrink:0;}
 
 /* ── SECTION SHARED ── */
 .section{padding:96px 40px;}
@@ -254,6 +255,7 @@ footer{background:#050505;padding:64px 40px 32px;border-top:3px solid var(--yell
 </section>
 
 <!-- TICKER -->
+<div class="ticker-label">Trusted By America's Leading Brands</div>
 <div class="ticker-wrap">
   <div class="ticker-track" id="tickerTrack">
     <span class="ticker-item"><img src="images/sams-club.png" alt="Sam's Club"/></span><span class="ticker-dot"></span>
@@ -446,10 +448,12 @@ footer{background:#050505;padding:64px 40px 32px;border-top:3px solid var(--yell
       <div class="footer-contact-item"><strong>Local</strong><span>(618) 929-3301</span></div>
       <div class="footer-contact-item"><strong>National</strong><span>888-223-3797 · 1-800-ASPHALT</span></div>
       <div class="footer-contact-item"><strong>Owner</strong><span>Joe Schanz</span></div>
+      <div style="margin-top:14px;margin-bottom:6px;font-size:0.7rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--yellow);">Main Office</div>
       <div class="footer-contact-item"><strong>HQ</strong><span>107 Southern Dr, Lebanon, IL 62254</span></div>
-      <div class="footer-contact-item"><strong>St. Louis</strong><span>11772 Westline Industrial Dr, Maryland Heights, MO 63146</span></div>
-      <div class="footer-contact-item"><strong>St. Peters</strong><span>1600 Heritage Landing, St Peters, MO 63303 · (314) 356-1142</span></div>
-      <div class="footer-contact-item"><strong>South County</strong><span>St. Louis, MO — Coming Soon</span></div>
+      <div style="margin-top:14px;margin-bottom:6px;font-size:0.7rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.35);">Satellite Offices</div>
+      <div class="footer-contact-item" style="font-size:0.8rem;"><strong>St. Louis</strong><span>11772 Westline Industrial Dr, Maryland Heights, MO 63146</span></div>
+      <div class="footer-contact-item" style="font-size:0.8rem;"><strong>St. Peters</strong><span>1600 Heritage Landing, St Peters, MO 63303 · (314) 356-1142</span></div>
+      <div class="footer-contact-item" style="font-size:0.8rem;"><strong>South County</strong><span style="color:rgba(255,255,255,0.35);">St. Louis, MO — Coming Soon</span></div>
       <div class="footer-contact-item"><strong>Email</strong><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="076e6961684766366674776f666b737775682964686a">[email&#160;protected]</a></span></div>
     </div>
     <div>
