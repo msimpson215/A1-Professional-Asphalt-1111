@@ -55,7 +55,6 @@ footer a:hover{color:#fff;}
   <a href="index.html" class="logo"><img src="A1__asphalt_logo.jpeg" alt="A1 Professional Asphalt"/></a>
   <div class="nav-right">
     <a href="index.html" class="back">← Back to Home</a>
-  <button onclick="openVox()" style="background:var(--yellow);color:var(--black);padding:10px 20px;border-radius:4px;font-weight:800;font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;border:none;cursor:pointer;">Talk with Our A.I. Team Member</button>
     <a href="https://a1-asphalt-voxtalk-3.onrender.com/" target="_blank" class="btn-ai">Talk with Our A.I. Team Member</a>
     <a href="tel:6189293301" class="call">📞 (618) 929-3301</a>
   </div>
@@ -96,16 +95,33 @@ footer a:hover{color:#fff;}
     </div>
   </div>
 </div>
+
+<div style="background:#111;padding:48px 60px;border-top:1px solid rgba(255,255,255,0.06);">
+  <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:48px;flex-wrap:wrap;">
+    <div style="flex:1;min-width:250px;">
+      <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;color:#F5C518;margin-bottom:12px;">Owner Podcast</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#fff;margin-bottom:8px;">Hear It Straight From Joe</div>
+      <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;line-height:1.6;">Joe talks about how A1 grew to a national level and why AI is changing the game for commercial asphalt.</p>
+    </div>
+    <div style="flex:1;min-width:280px;background:#1a1a1a;border-radius:8px;padding:24px;border:1px solid rgba(255,255,255,0.08);">
+      <div style="font-size:0.78rem;font-weight:800;color:#F5C518;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;">🎙️ Scaling an Asphalt Empire with AI</div>
+      <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:12px;">Joe Schanz — Owner, A1 Professional Asphalt & Sealing LLC</div>
+      <audio controls preload="metadata" style="width:100%;border-radius:4px;">
+        <source src="Scaling_an_asphalt_empire_with_AI.mp3" type="audio/mpeg"/>
+      </audio>
+    </div>
+  </div>
+</div>
 <div class="cta-strip">
   <h2>Ready to Get Started?</h2>
-  <p>Call Joe directly or request a free estimate. We respond fast.</p>
+  <p style="color:rgba(0,0,0,0.85);font-weight:700;font-size:1.1rem;">Call Joe directly. We pick up.</p>
   <div class="btns">
     <a href="tel:6189293301" class="btn-dark">Call (618) 929-3301</a>
     <a href="https://a1asphaltpro.com/contact-us/" class="btn-dark">Get a Free Estimate</a>
   </div>
 </div>
 <footer>
-  <p>© 2025 A1 Professional Asphalt & Sealing LLC · St. Louis, IL · Nationwide</p>
+  <p>© 2025 A1 Professional Asphalt & Sealing LLC · 107 Southern Dr, Lebanon, IL 62254 · (618) 929-3301 · 888-223-3797 · Nationwide</p>
   <p><a href="index.html">← Home</a> &nbsp;·&nbsp; <a href="tel:6189293301">(618) 929-3301</a> &nbsp;·&nbsp; <a href="tel:8882233797">888-223-3797</a></p>
 </footer>
 <div id="vox-overlay" style="display:none;position:fixed;bottom:90px;right:24px;width:340px;height:480px;background:#111;border:1px solid #F5C518;border-radius:12px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.8);z-index:9999;"><button onclick="closeVox()" style="position:absolute;top:8px;right:12px;background:none;border:none;color:#fff;font-size:1.1rem;font-weight:900;cursor:pointer;z-index:10;">✕</button><iframe src="https://a1-asphalt-voxtalk-3.onrender.com/" title="A1 AI Team Member" allow="microphone" style="width:100%;height:100%;border:none;"></iframe></div><script>function openVox(){document.getElementById("vox-overlay").style.display="block";}function closeVox(){document.getElementById("vox-overlay").style.display="none";}document.addEventListener("keydown",function(e){if(e.key==="Escape")closeVox();});</script></body>
